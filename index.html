@@ -10,7 +10,7 @@
 
 <body>
 <h1>nCloth </h1>
-<p>The idea of nclocth is having a<strong> nMesh</strong> (ex. shirt) colliding against a <strong>passive Collider</strong> (ex. skin) for simulate realistic cloth behaviour.</p>
+<p>The idea of nCloth is having a<strong> nMesh</strong> (ex. shirt) colliding against a <strong>passive Collider</strong> (ex. skin) for simulate realistic cloth behaviour.</p>
 <p>Nucleus Cloth is a stable system of<strong> linked particles</strong> to simulate a wide variety of polygon surfaces.<br />
   This network of particles is connected by  links, which together create a dynamic mesh. <br />
   <span class="bold">Links</span> mantain  the distance between particles, and<span class="bold"> cross-links</span> mantain  the angle between links, stabilizing the nCloth and preventing cloth behavior like shearing.</p>
@@ -20,7 +20,7 @@
   <li>nCloth collide with surfaces, with itself, and can also collide with particles</li>
   <li>nCloth can only be made of<strong> polygons</strong></li>
 </ul>
-<p><img src="nclothlinks.jpg" alt="nCloth links" width="237" height="123" /></p>
+<p><img src="assets/nclothlinks.jpg" alt="nCloth links" width="237" height="123" /></p>
 <h2>CREATE NCLOTH
 </h2>
 <p>For create a cloth mesh around a character, select it and <strong>nMesh&gt; Create nCloth</strong><br />
@@ -157,7 +157,7 @@ In the option box you have 2 options:</p>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td class="table_titles">Enable (On)</td>
-    <td><img src=ignoreSolverGravity.gif</td>
+    <td><img src=assets/ignoreSolverGravity.gif</td>
     <td><p>Enables or Disables nCloth Calculations for the current mesh</p></td>
   </tr>
   <tr>
@@ -165,17 +165,17 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Collide (On)</td>
-    <td><img src=collide.gif></td>
+    <td><img src=assets/collide.gif></td>
     <td><p>Enables or Disables Collisions for the current mesh</p></td>
   </tr>
   <tr>
     <td class="table_titles">Self Collide (On)</td>
-    <td><img src=selfCollide.gif></td>
+    <td><img src=assets/selfCollide.gif></td>
     <td><p>The nCloth will<strong> collide with itself</strong>, for faster playback you can disable this feature if no significant self collision effects are needed.</p></td>
   </tr>
   <tr>
     <td class="table_titles">Collision Flag (Face)</td>
-    <td><img src=collisionFlag.gif></td>
+    <td><img src=assets/collisionFlag.gif></td>
     <td><p>Lets you specify which of the polygon's components will calculate collisions:</p>
       <ul>
         <li><strong>face</strong>, the most accurate but slowest in calculating</li>
@@ -186,7 +186,7 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Self Collision Flag (Vertex Face)</td>
-    <td><img src="selfCollisionFlag.jpg" alt="nCloth Self Collision Flag" width="200" height="110" class="imgNoBrdr" /></td>
+    <td><img src="assets/selfCollisionFlag.jpg" alt="nCloth Self Collision Flag" width="200" height="110" class="imgNoBrdr" /></td>
     <td><p>only for nCloth, for<span class="bold"> Passive Colliders</span> this attribute is ignored, as they don't self collide.</p>
       <ul>
         <li>Vertex (right image)</li>
@@ -197,7 +197,7 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Collide Strength (1)</td>
-    <td><img src=collideStrength.gif></td>
+    <td><img src=assets/collideStrength.gif></td>
     <td><p>Varies from 0, which is the same as turning off collisions, to 1, which will enable full collision strenght between nCloth and other Nucleus.</p></td>
   </tr>
   <tr>
@@ -208,19 +208,19 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Thickness (0.024)</td>
-    <td><img src=thickness.gif></td>
+    <td><img src=assets/thickness.gif></td>
     <td><p>How thick the surfaces is for collision calculations with other<strong> passive colliders. </strong>Remeber that this attribute is not related with self collision properties, which instead <strong>self collision width scale</strong> does. Collisions happen on the collision volume, not on the polygon itself.</p></td>
   </tr>
   <tr>
     <td class="table_titles">Self Collide Width Scale (1)</td>
-    <td><img src=selfCollideWidthScale.gif></td>
+    <td><img src=assets/selfCollideWidthScale.gif></td>
     <td><p><strong>Self Collision Thickness</strong><span class="bold"> = Self Collide WIdth Scale * Thickness</span></p>
       <p>So by default 1, self collision thickness is equal to thickness attribute, with value 0.5, only the half.</p>
     <p>same as <strong>thikness</strong> attribute but this is related only to <strong>self collision</strong>, not with other objects.</p></td>
   </tr>
   <tr>
     <td class="table_titles">Solver Display (Off)</td>
-    <td><img src="solverDisplay.jpg" alt="nCloth Solver Display" width="200" height="110" class="imgNoBrdr" /></td>
+    <td><img src="assets/solverDisplay.jpg" alt="nCloth Solver Display" width="200" height="110" class="imgNoBrdr" /></td>
     <td><p>displays in the viewport these collision attributes</p>
       <ul>
         <li><strong>Collision Thickness</strong></li>
@@ -232,7 +232,7 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Display Color (Yellow)</td>
-    <td><img src="displayColor.jpg" alt="nCloth Display Color" width="200" height="110" class="imgNoBrdr" /></td>
+    <td><img src="assets/displayColor.jpg" alt="nCloth Display Color" width="200" height="110" class="imgNoBrdr" /></td>
     <td><p>Specifies the color of the collision volumes                          for the current nCloth object. Display Color is                          only visible when your scene view display mode is set to Shading                             &gt; Smooth Shade Selected Items or Shading                             &gt; Flat Shade Selected Items. </p>
     <p>Remember that Display Color has no effect on calculations or render.</p></td>
   </tr>
@@ -244,12 +244,12 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Friction (0.1)</td>
-    <td><img src=friction.gif></td>
+    <td><img src=assets/friction.gif></td>
     <td><p>default  0.1, usually looks unnatural as the cloth slides along surfaces as if they were very <strong>slippery</strong>. By increasing this value the cloth will behave more sticky. This simulation is also influenced by <strong>Stickiness</strong>.  This value is calculated in<strong> tangent direction</strong>.</p></td>
   </tr>
   <tr>
     <td class="table_titles">Stickiness (0)</td>
-    <td><img src=stickiness.gif></td>
+    <td><img src=assets/stickiness.gif></td>
     <td><p>how much nCloth tend to <strong>stick</strong> to another, this value is calculated in<strong> normal direction</strong>.</p></td>
   </tr>
   <tr>
@@ -257,60 +257,60 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Stretch Resistance (20)</td>
-    <td><img src=stretchResistance.gif></td>
+    <td><img src=assets/stretchResistance.gif></td>
     <td><p>Its ability to resist beeing <strong>stretched when pulled</strong>. So higher values will make it stiffer while lower values will make the cloth behave more elastically.<br />
     Stretch resistance is resolution dependent, so you would need to increase this value if your mesh has high resolution. This attribute takes action when the links are longer than the original mesh's.</p></td>
   </tr>
   <tr>
     <td class="table_titles">Compression Resistance (10)</td>
-    <td><img src=compressionResistance.gif></td>
+    <td><img src=assets/compressionResistance.gif></td>
     <td><p>Is the opposite of stretching, it controls how much the <strong>vertices resist</strong> to beeing <strong>compressed to each other</strong>. This attribute takes action when the nCloths links are less then the original mesh's. </p>
     <p>Note, although I've used a cube for demonstration, this applies also to open meshes, for example, with default value, a <span class="bold">blanquet would not completely cover a sleeping character</span> and you would think Bend Resistance is responsible. However if you 0 this value you'll see that immediately the blanquet will perfectly fold around the character.</p></td>
   </tr>
   <tr>
     <td class="table_titles">Bend Resistance (0.1)</td>
-    <td><img src=bendResistance.gif></td>
+    <td><img src=assets/bendResistance.gif></td>
     <td><p>How much the mesh resists to <strong>bending over edges</strong>, with high values, the cloth will almost not bend, behaving like an inflatable object full of air.</p></td>
   </tr>
   <tr>
     <td class="table_titles">Bend Angle Dropoff (0)</td>
-    <td><img src=bendAngleDropoff.gif></td>
+    <td><img src=assets/bendAngleDropoff.gif></td>
     <td><p>A high value will cause the cloth to resist being bent at <strong>high angles</strong> more than at lower angles. In this video the <span class="bold">same Bend Resistance</span> value has been used.</p></td>
   </tr>
   <tr>
     <td class="table_titles"> Shear Resitance (0)</td>
-    <td><img src=shearResistance.gif></td>
+    <td><img src=assets/shearResistance.gif></td>
     <td><p>similar to stretch resistance, but is applied along the<strong> crosslinks</strong> between particles of the nCloth. Shearing causes the nCloth to stretch in an unequal fashion, causing distortion. Usually default 0 is acceptable, <strong>stretch resistance</strong> and <strong>compression resistance</strong> keep the cloth from shearing. Also, shear resistance can be slow to calculate. Left is stretch resistance and right is with shear.</p></td>
   </tr>
   <tr>
     <td class="table_titles">Restitution Angle (360)   </td>
-    <td><img src=restitutionAngle.gif></td>
+    <td><img src=assets/restitutionAngle.gif></td>
     <td><p>The degree which nCloth is allowed to bend across edges before it can no longer return to its rest angle (this only if no forces are acting upon the nCloth)</p></td>
   </tr>
   <tr>
     <td class="table_titles">Restitution Tension (1000)</td>
-    <td><img src=restitutionTension.gif></td>
+    <td><img src=assets/restitutionTension.gif></td>
     <td><p>When no forces are acting upon the nCloth, specifies                          how far the<strong> links</strong> in the current nCloth object <strong>can stretch</strong> before                          they can no longer return to their rest lengths. Use Restitution Tension to                          simulate a substance like silly putty being stretched.</p></td>
   </tr>
   <tr>
     <td class="table_titles"> Rigidity (0)</td>
-    <td><img src=rigidity.gif></td>
+    <td><img src=assets/rigidity.gif></td>
     <td><p>Specifies                          how much the current nCloth object wants to act as a<strong> rigid body</strong>A value of 1 makes the nCloth act as a rigid body, while a value between                          0-1 makes a hybrid between cloth and rigid body. </p></td>
   </tr>
   <tr>
     <td class="table_titles">Deform Resistance (0)   </td>
-    <td><img src=deformResistance.gif></td>
+    <td><img src=assets/deformResistance.gif></td>
     <td><p>Specifies how much the current nCloth object wants                          to maintain its <strong>current shape</strong>. This value determines the degree                          to which deformations and collisions during simulation impact the nCloth                          surface. </p>
     <p>Note that this attribute does <strong>not depend from the orinal mesh</strong>, which is the case of <span class="bold">Input Mesh Attract.</span></p></td>
   </tr>
   <tr>
     <td class="table_titles">Input Mesh Attract (0)   </td>
-    <td><img src=inputMeshAttract.gif></td>
+    <td><img src=assets/inputMeshAttract.gif></td>
     <td><p>How strongly the nCloth tends to take the<strong> same shape</strong> and form of the<strong> original mesh.</strong></p></td>
   </tr>
   <tr>
     <td class="table_titles">Input Attract Damp (0.5)</td>
-    <td><img src=inputMeshAttractDamp.gif></td>
+    <td><img src=assets/inputMeshAttractDamp.gif></td>
     <td><p>The <strong>delay</strong> the cloth has by following the orinal mesh, if this value is 0, the cloth will stick to the original mesh (rest position), if you increase this value, the cloth will delay  and react more to the motion.</p></td>
   </tr>
   <tr>
@@ -325,7 +325,7 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Mass (1)</td>
-    <td><img src=mass.gif></td>
+    <td><img src=assets/mass.gif></td>
     <td><p> determines                          the <strong>density</strong> of an nCloth or the weight of an nCloth when the nucleus' gravity is greater than 0.</p>
       <p>This value should be based by its type of fabric or material.                          For example, 0 is appropriate for silk and 1 for felt.</p>
       <p>Mass affects                          behavior in <strong>collisions</strong> and behavior with 
@@ -334,23 +334,23 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Lift (0.05)</td>
-    <td><img src=lift.gif></td>
+    <td><img src=assets/lift.gif></td>
     <td><p><strong>related to wind</strong>,  first of all activate wind speed from 0 to a higher value. This will alter the way cloth falls through the environment, for example falling leaves. Lift is the perpendicular direction to the wind.</p>
     <p>Is                          the component of aerodynamic force <strong>perpendicular</strong> to the relative <strong>wind</strong>.                          For example, you can use Lift (with Wind Speed and Drag)                          to create the rippling effect of a flag blowing in the wind.</p></td>
   </tr>
   <tr>
     <td class="table_titles">Drag (0.05)</td>
-    <td><img src=drag.gif></td>
+    <td><img src=assets/drag.gif></td>
     <td><p> same as lift, but <strong>parallel</strong> to the relative wind                          which causes resistance.</p></td>
   </tr>
   <tr>
     <td class="table_titles">    Tangential Drag (0)</td>
-    <td><img src=tangentialDrag.gif></td>
+    <td><img src=assets/tangentialDrag.gif></td>
     <td><p>How much to consider the <strong>normal </strong>direction of polygons. It biases the effects of                          drag relative to the surface tangent of the current nCloth object.                          For example, a Tangential Drag of 0.0 causes                          a flat plane to slice through the air with no resistance and only                          have drag when moving along its normal axis, and a Tangential                             Drag of 1.0 causes the effects of drag to be equal in                          all directions.</p></td>
   </tr>
   <tr>
     <td class="table_titles">Damp (0)</td>
-    <td><img src=damp.gif></td>
+    <td><img src=assets/damp.gif></td>
     <td><p>From Wikipedia: &quot;<em>In physics, <span class="bold">damping</span> is any effect that   tends to <strong>reduce the amplitude of oscillations</strong> in an oscillatory   system, particularly the harmonic   oscillator</em>&quot;.  But too much damping will make the cloth look like float in the air. Damping progressively                          diminishes the movement and oscillation of nCloth by<span class="bold"> dissipating                          energy</span>.</p></td>
   </tr>
   <tr>
@@ -360,7 +360,7 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Scaling Relation (Link)   </td>
-    <td><img src=scalingRelation.gif></td>
+    <td><img src=assets/scalingRelation.gif></td>
     <td><p>specifies the way dynamic attributes such as Bend and Stretch are                    defined relative to the scale and vertex density of the current                    nCloth object</p>
       <ul>
         <li><strong>Link</strong>, dynamic properties are                             applied to each link on the current nCloth object. The greater the nCloth’s                             resolution (vertex density), the greater the effect of its dynamic                             properties such as Stretch Resistance and Bend                                Resistance.</li>
@@ -370,12 +370,12 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Ignore Solver Gravity (Off)</td>
-    <td><img src=ignoreSolverGravity.gif></td>
+    <td><img src=assets/ignoreSolverGravity.gif></td>
     <td><p>by default, when an nCloth is created it will automatically fall affected from the solver's gravity. You can prevent this from happening simply by turning this feature on.</p></td>
   </tr>
   <tr>
     <td class="table_titles">Ignore Solver Wind (Off)</td>
-    <td><img src=ignoreSolverWind.gif></td>
+    <td><img src=assets/ignoreSolverWind.gif></td>
     <td><p>doesn't take into account the <strong>wind</strong> attribute of the<strong> nucleus</strong></p></td>
   </tr>
   <tr>
@@ -383,7 +383,7 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Maps (none)</td>
-    <td><img src=maps.gif></td>
+    <td><img src=assets/maps.gif></td>
     <td><ul>
       <li class="bold">Stretch</li>
       <li class="bold">Bend</li>
@@ -396,7 +396,7 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Type (Texture)</td>
-    <td><img src="perVertexvxTex.jpg" alt="nCloth per vertex and texture attribute type" width="200" height="150" class="imgNoBrdr" /></td>
+    <td><img src="assets/perVertexvxTex.jpg" alt="nCloth per vertex and texture attribute type" width="200" height="150" class="imgNoBrdr" /></td>
     <td><ul>
       <li> <strong>Per-vertex,</strong> (left) map is applied                             per-vertex (go to<span class="bold"> nMesh &gt; Paint Vertex Properties</span>). Advantage of using vertices is that each data is stored in each vertex, and it's faster and easier to manage</li>
       <li><strong>Texture</strong>, (right) uses the texture map specified                             by the Wrinkle Map attribute</li>
@@ -405,13 +405,13 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Wrinkle Map (none)</td>
-    <td><img src=wrinkleMap.gif></td>
+    <td><img src=assets/wrinkleMap.gif></td>
     <td><p>modifies the internal                             rest shape of the nCloth input mesh by displacing it along its normals.                             The amount of displacement is determined by the Wrinkle                                Map value at each vertex, which is then multiplied by                             the Wrinkle Map Scale. When the                             nCloth is simulated, it<strong> tries to achieve the displaced shape instead                             of its normal rest shape.</strong> The rest shape is only used for determining                             the nCloth’s Stretch Resistance and Bend                                Resistance. The nCloth object’s<span class="bold"> Input Mesh                                Attract</span> and <span class="bold">Rigidity</span> are                             not affected by the Wrinkle Map. </p>
     <p>When applying a wrinkle                                map to an nCloth mesh, the wrinkle offset is to <strong>one side only</strong>, in                                the direction of the normals. To make positive and negative wrinkles,                                set the <em>Alpha Offset</em> value to -0.5 on                                the wrinkle map texture node. </p></td>
   </tr>
   <tr>
     <td class="table_titles">Wrinke Map Scale (1)</td>
-    <td><img src=wrinkleMapScale.gif></td>
+    <td><img src=assets/wrinkleMapScale.gif></td>
     <td><p>Determines the <strong>displacement</strong> of a wrinkle map. A                             negative value pushes wrinkles <strong>in</strong>, instead of <strong>out</strong>. If your scene                             scale is large, this value should also be large. The default value                             is 1. </p>
     <p>At large scene scales                             a high Wrinkle Map Scale value is                             required to account for world space displacement. </p></td>
   </tr>
@@ -420,7 +420,7 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Force Field (Off)</td>
-    <td><img src=forceField.gif></td>
+    <td><img src=assets/forceField.gif></td>
     <td><p>If On, nCloth will generate wind from itself, remember that both nCloth and passive colliders can Generate Wind.</p>
       <ul>
         <li><strong>Off</strong>, Force                                Field generation is turned off.
@@ -436,30 +436,30 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Field Magnitude (1)</td>
-    <td><img src=fieldMagnitude.gif></td>
+    <td><img src=assets/fieldMagnitude.gif></td>
     <td><p>Sets the strength of the Force                             Field. Positive Field Magnitude values                          push nParticle objects and other nCloth objects away from the current nCloth.                          Negative Field Magnitude values pull nParticle                          objects and other nCloth objects toward the current nCloth. </p></td>
   </tr>
   <tr>
     <td class="table_titles">Field Distance (1)</td>
-    <td><img src=fieldDistance.gif></td>
+    <td><img src=assets/fieldDistance.gif></td>
     <td><p>Sets the distance (in field units) from the                          surface of the force generating nCloth that the Force Field is                          active. Outside the Field Distance, the Force                             Field does not affect nParticle objects and other nCloth                          objects</p></td>
   </tr>
   <tr>
     <td class="table_titles"><p>Selected Position</p>
     <p>and </p>
     <p>Selected Value</p></td>
-    <td><img src=selectedPosition.gif></td>
-    <td><p><img src="selected position default.jpg" alt="nCloth Selected Position" width="116" height="52" /> <img src="selected position 02.jpg" alt="nCloth selected Position" width="116" height="52" /><br />
+    <td><img src=assets/selectedPosition.gif></td>
+    <td><p><img src="assets/selected_position_default.jpg" alt="nCloth Selected Position" width="116" height="52" /> <img src="assets/selected_position_02.jpg" alt="nCloth selected Position" width="116" height="52" /><br />
     The left graph is the default one, which means that the magnitude decreases <strong>linearly</strong> with distance. On the right graph, shown in the animation, the wind looses much faster its strength. You can see that the first flag is heavily affected by the wind, the second already doesn't react much, even though it is only a few units farther from the first one.</p></td>
   </tr>
   <tr>
     <td class="table_titles">Interpolation (Linear)</td>
-    <td><img src="interpolation.jpg" alt="interpolation" width="200" height="52" class="imgNoBrdr" /></td>
+    <td><img src="assets/interpolation.jpg" alt="interpolation" width="200" height="52" class="imgNoBrdr" /></td>
     <td><p>The left one is deafult <strong>linear</strong>, the right is <strong>smooth</strong>. It is simply the tangent curve. </p></td>
   </tr>
   <tr>
     <td class="table_titles">Field Magnitude Map (none)</td>
-    <td><img src=fieldMagnitudeMap.gif></td>
+    <td><img src=assets/fieldMagnitudeMap.gif></td>
     <td><p>Lets you assign Magnitude Values with a Texture or Vertex Map.<br />
       (
     see <span class="bold">Dynamic Property Maps</span>) </p>
@@ -506,7 +506,7 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Pressure Method (Manual Pressure Setting)</td>
-    <td><img src="pressure method.jpg" alt="nCloth Pressure Method" width="200" height="150" class="imgNoBrdr" /></td>
+    <td><img src="assets/pressure_method.jpg" alt="nCloth Pressure Method" width="200" height="150" class="imgNoBrdr" /></td>
     <td><p>specifies how the pressure value is defined</p>
       <ul>
         <li><strong>Manual Pressure Settings</strong>, defined as a user-defined value that can be keyframed, notice how in this method you don't have access to Start Pressure, Pump Rate, Air Tightness and Incompressibility.</li>
@@ -515,37 +515,37 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Pressure (0)</td>
-    <td><img src=pressure.gif></td>
+    <td><img src=assets/pressure.gif></td>
     <td><p>specifies a <strong>force applied along the surface normal</strong> direction of the current nCloth object when the Pressure Method is set to Manual. (Pressure and Pressure Damping the only attribute available when <span class="bold">Pressure Setting</span> is set to <strong>Manual Pressure Setting</strong>) Note that pressure can also have a negative value for simulate an<span class="bold"> imploding object</span>.</p></td>
   </tr>
   <tr>
     <td class="table_titles">Pressure Damping (0)</td>
-    <td><img src=pressureDamping.gif></td>
+    <td><img src=assets/pressureDamping.gif></td>
     <td><p>the amount the air pressure is damped for the nCloth</p></td>
   </tr>
   <tr>
     <td class="table_titles">Start Pressure (0)</td>
-    <td><img src=startPressure.gif></td>
+    <td><img src=assets/startPressure.gif></td>
     <td><p>the relative air pressure inside the current nCloth object at the start frame. </p></td>
   </tr>
   <tr>
     <td class="table_titles">Pump Rate (0)</td>
-    <td><img src=pumpRate.gif></td>
+    <td><img src=assets/pumpRate.gif></td>
     <td><p>the rate at which air pressure is added to the current nCloth object. </p></td>
   </tr>
   <tr>
     <td class="table_titles">Air Tightness (1)</td>
-    <td><img src=airTightness.gif></td>
+    <td><img src=assets/airTightness.gif></td>
     <td><p>The rate at which air can escape from the nCloth, or how<strong> permeable</strong> it is.</p></td>
   </tr>
   <tr>
     <td class="table_titles">Incompressibility (5)</td>
-    <td><img src=incompressibility.gif></td>
+    <td><img src=assets/incompressibility.gif></td>
     <td><p>specifies the incompressibilty of the current nCloth object's internal air volume. This also affects the amount of force applied when air is pumpd into the nCloth. note that a higher Incompressibilty value may require more solver calculation time. </p></td>
   </tr>
   <tr>
     <td class="table_titles">Seal Holes (on)</td>
-    <td><img src=sealHoles.gif></td>
+    <td><img src=assets/sealHoles.gif></td>
     <td><p>By defaul polygons are treated as <strong> closed,</strong> even if there are actual &quot;holes&quot;.<strong></strong></p></td>
   </tr>
   <tr>
@@ -636,7 +636,7 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Play From Cache ( only in channel box)</td>
-    <td><img src=playFromCache.gif></td>
+    <td><img src=assets/playFromCache.gif></td>
     <td> <p>once you go in nCache&gt; <strong>create a new cache</strong>, this attribute will turn on, which means that the deformation of the polygon will not be calculated anymore from the nucleous but simply readen from the cache file, this enables you to <strong>move the timeslider</strong> manually and even play the animtion<strong> backwards</strong>.</p></td>
   </tr>
   <tr>
@@ -814,7 +814,7 @@ In the option box you have 2 options:</p>
 </table>
 <h2>Presets</h2>
 <p>In the AE, on the right top there is a preset button where you can choose between these 20 presets.</p>
-<p><img src=presets02.gif></p>
+<p><img src=assets/presets02.gif></p>
 
 <h2>Apply fields</h2>
 <p>Just like with particles, you can apply any field by selecting the nCloth and <strong>Field&gt; ....</strong></p>
@@ -830,7 +830,7 @@ In the option box you have 2 options:</p>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="23%" class="table_titles">Transform</td>
-    <td width="18%"><img src="transofrm.jpg" alt="nCloth transform constraint" width="200" height="150" class="imgNoBrdr" /></td>
+    <td width="18%"><img src="assets/transofrm.jpg" alt="nCloth transform constraint" width="200" height="150" class="imgNoBrdr" /></td>
     <td width="59%"><p>In the example the top row of vertices are pinned to the animated locator, for do so:</p>
       <ol>
         <li>Select the vertices you want to pin</li>
@@ -840,7 +840,7 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Component to Component</td>
-    <td><img src="componentToComponent.jpg" alt="nCloth component to component constraint" width="200" height="150" class="imgNoBrdr" /></td>
+    <td><img src="assets/componentToComponent.jpg" alt="nCloth component to component constraint" width="200" height="150" class="imgNoBrdr" /></td>
     <td><p>In the example the bottom vertices of the top mesh are constrained to the top vertices of the bottom mesh. For do so:</p>
       <ol>
         <li>Select all vertices you want to glue together</li>
@@ -849,7 +849,7 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Point to Surface</td>
-    <td><img src="pointToSurface.jpg" alt="nCloth point to surface constraint" width="200" height="150" class="imgNoBrdr" /></td>
+    <td><img src="assets/pointToSurface.jpg" alt="nCloth point to surface constraint" width="200" height="150" class="imgNoBrdr" /></td>
     <td><p>In this example I've attached the bottom vertices of the rope to the sphere. For do so:</p>
       <ol>
         <li>Select the vertices</li>
@@ -879,7 +879,7 @@ In the option box you have 2 options:</p>
   </tr>
   <tr>
     <td class="table_titles">Tearable Surface</td>
-    <td><img src="tearableSurface.jpg" alt="nCloth tearable Surface" width="200" height="150" class="imgNoBrdr" /></td>
+    <td><img src="assets/tearableSurface.jpg" alt="nCloth tearable Surface" width="200" height="150" class="imgNoBrdr" /></td>
     <td><p>In this example the key framed passive Collider (sphere) tears the nCloth apart. For do so:</p>
       <ol>
         <li>Select the nCloth</li>
